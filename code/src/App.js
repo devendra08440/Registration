@@ -7,9 +7,9 @@ function App() {
   return (
     <div className="App">
       <Home/>
-      <Routes>
+      {/* <Routes>
         <Route path='/Registration' element={<Registration/>}/>
-      </Routes>
+      </Routes> */}
     </div>
   );
 }
