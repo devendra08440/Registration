@@ -6,10 +6,10 @@ import Home from './Components/Registration/Home/Home';
 function App() {
   return (
     <div className="App">
-      <Home/>
-      {/* <Routes>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
         <Route path='/Registration' element={<Registration/>}/>
-      </Routes> */}
+      </Routes>
     </div>
   );
 }
