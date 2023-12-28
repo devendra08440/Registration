@@ -1,0 +1,122 @@
+.container{
+    display: flex;
+    background-color: white;
+    width: 700px;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px;
+}
+.container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: aquamarine; */
+    width: 550px;
+}
+.container form h3{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.container form .input-field{
+    width: 100%;
+    /* background-color: aliceblue; */
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.container form .input-field input{
+    width: 85%;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 10px;
+    padding-left: 10px;
+}
+.container form .input-field .errorInput{
+    border: 1px solid red;
+}
+.container form .input-field .errorInput::placeholder{
+    color: red;
+}
+.container form .input-field .errorInput:focus-visible{
+    border: 1px solid red;
+}
+.container form .input-field span{
+    visibility: hidden;
+    position: relative;
+    right: 35px;
+}
+.container form .input-field .error{
+    color: red;
+    visibility: visible;
+    
+}
+.container form .checkbox-field{
+    /* background-color: aliceblue; */
+    margin-bottom: 15px;
+    width: 100%;
+    justify-content: start;
+}
+.container form .checkbox-field input[type= "checkbox"]{
+    width: 25px;
+    position: relative;
+}
+.container form .checkbox-field span{
+    visibility: hidden;
+}
+.container form .checkbox-field .error{
+    visibility: visible;
+    color: red;
+}
+.checkbox-field .errorInput{
+    accent-color: red;
+}
+.container form .checkbox-field .errorLabel, .errorLabel a{
+    color: red;
+}
+.error:hover{
+    cursor: pointer;
+}
+.container form .button-field{
+    /* background-color: green; */
+    width: 118px;
+}
+.container form .button-field button{
+    font-size: 26px;
+    background-color: rgba(0, 0, 255, 0.829);
+    color: white;
+    padding: 10px;
+    border: 1px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.container form .button-field button:disabled{
+    background-color: rgba(0, 0, 255, 0.521);
+    color: whitesmoke;
+    cursor: not-allowed;
+}
+.container .logo-image img{
+    width: 120px;
+    height: 400px;
+}
+
+.modal{
+    background-color: yellow;
+    position: absolute;
+    right: 0px;
+    z-index: 1;
+    display: flex;
+    width: auto;
+    justify-content: start;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+.modal label{
+    width: 250px;
+}
