@@ -104,7 +104,7 @@ const Registration = () => {
                 <div className="input-field">
                     <img src={user} alt="user-icon" />
                     <input type="text" placeholder="Your Name" name="userName" id="userName" className={error.userName?"errorInput":""} onChange={inputHandle} value={value.userName} autoComplete="on"/>
-                    <span className={error.userName?"error":""} htmlFor={"userName"} onClick={()=>setModalOpen1(!modalOpen1)}>
+                    <span className={error.userName?"error":""} htmlFor={"userName"} onClick={()=>setModalOpen1(!modalOpen1)} onMouseEnter={()=>setModalOpen1(!modalOpen1)} onMouseLeave={()=>setModalOpen1(!modalOpen1)}>
                         &#x26A0;
                         <div className="box-modal">
                             {modalOpen1?<Modal errorMessage={error.userName}/>:<></>}
@@ -116,7 +116,7 @@ const Registration = () => {
                 <div className="input-field">
                     <img src={email} alt="email-icon" />
                     <input type="text" placeholder="Your Email" name="email" id="email" className={error.email?"errorInput":""} onChange={inputHandle} value={value.email} autoComplete="on"/>
-                    <span className={error.email?"error":""} htmlFor={"email"} onClick={()=>setModalOpen2(!modalOpen2)}>
+                    <span className={error.email?"error":""} htmlFor={"email"} onClick={()=>setModalOpen2(!modalOpen2)} onMouseEnter={()=>setModalOpen2(!modalOpen2)} onMouseLeave={()=>setModalOpen2(!modalOpen2)}>
                         &#x26A0;
                         <div className="box-modal">
                             {modalOpen2?<Modal errorMessage={error.email}/>:<></>}
@@ -127,7 +127,7 @@ const Registration = () => {
                 <div className="input-field">
                     <img src={lock} alt="lock-icon" />
                     <input type="password" placeholder="Password" name="password" id="password" className={error.password?"errorInput":""} onChange={inputHandle} value={value.password} autoComplete="on"/>
-                    <span className={error.password?"error":""} htmlFor={"password"} onClick={()=>setModalOpen3(!modalOpen3)}>
+                    <span className={error.password?"error":""} htmlFor={"password"} onClick={()=>setModalOpen3(!modalOpen3)} onMouseEnter={()=>setModalOpen3(!modalOpen3)} onMouseLeave={()=>setModalOpen3(!modalOpen3)}>
                     &#x26A0;
                         <div className="box-modal">
                             {modalOpen3?<Modal errorMessage={error.password}/>:<></>}
@@ -138,7 +138,7 @@ const Registration = () => {
                 <div className="input-field">
                     <img src={key} alt="key-icon" />
                     <input type="password" placeholder="Repeat your password" name="re-password" id="re-password" className={error["re-password"]?"errorInput":""} onChange={inputHandle} value={value["re-password"]} autoComplete="on"/>
-                    <span className={error["re-password"]?"error":""} htmlFor={"re-password"} onClick={()=>setModalOpen4(!modalOpen4)}>
+                    <span className={error["re-password"]?"error":""} htmlFor={"re-password"} onClick={()=>setModalOpen4(!modalOpen4)} onMouseEnter={()=>setModalOpen4(!modalOpen4)} onMouseLeave={()=>setModalOpen4(!modalOpen4)}>
                         &#x26A0;
                         <div className="box-modal">
                             {modalOpen4?<Modal errorMessage={error["re-password"]}/>:<></>}
